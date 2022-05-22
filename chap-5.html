@@ -14,12 +14,12 @@
     <br>
     <h2>Q1</h2>
     <script>
-        let number1 = "10";
-        let number2 = "5";
-        document.write("sum of ", number1)
-        document.write(" and ", number2)
-        result = Number(number1) + Number(number2);
-        document.write(" is ", result);
+        let number1 = + prompt("Enter a first sum value");
+        let number2 = + prompt("Enter a second sum value");
+        result = Number(number1) * Number(number2);
+        document.write("sum of &nbsp" + number1 + "&nbsp and &nbsp" + number2 + "&nbsp is &nbsp" + result);
+
+
     </script>
     <br>
     <h2>Q2</h2>
@@ -40,7 +40,7 @@
     <script>
         document.write("sum of ", number1)
         document.write(" and ", number2)
-        result = Number(number1) * Number(number2);
+        result = Number(number1) + Number(number2);
         document.write(" is ", result);
     </script>
 
@@ -48,45 +48,79 @@
     <h2>Q4</h2>
     <script>
         let ticketcost = "600";
-        let buying = "5"
-        document.write("cost to buy 5 tickets is ")
+        let buying = prompt("ticket cost is 600");
+        document.write("cost to buy " + buying + " tickets is ")
         result = Number(ticketcost) * Number(buying);
         document.write(result);
 
     </script>
     <br>
-    <h2>Q5</h2>
-
+    <!-- <h2>Q5</h2> -->
     <script>
+        let num = prompt("enter a table");
+        let i = 5
+        document.write('<table border="3" cellspacing="3"');
+        for (i = 1; i <= 10; i++) {
+            document.write("<tr><td>" + num + "x" + i + "=" + num * i + "</td></tr>");
 
-        document.write("table of 4", "<br>", "4 x 1 = 4", "<br>", "4 x 2 = 8", "<br>", "4 x 3 = 12", "<br>", "4 x 4 = 16", "<br>", "4 x 5 = 20", "<br>", "4 x 6 = 24", "<br>", "4 x 7 = 28", "<br>", "4 x 8 = 32", "<br>", "4 x 9 = 36", "<br>", "4 x 10 = 40")
-
+        }
     </script>
+
     <h2>Q7</h2>
     <script>
-        let item1 = "650";
-        let item2 = "100";
-        let quantity1 = "3";
-        let quantity2 = "7";
-        let shipingcharges = "100"
-        sum = Number(item1) * Number(quantity1);
-        sum2 = Number(item2) * Number(quantity2);
-        result = Number(sum) + Number(sum2) + Number(shipingcharges)
-        document.write("price of item1 is 650", "<br>", "Quantity of item1 is 3", "<br>", "price of item2 is 100", "<br>", "Quantity of item2 is 7", "<br>", "shiping charges is 100", "<br>", "<br>", "Total cost of your order is ")
-        document.write(result)
+        let item1 = 650;
+        let item2 = 100;
+        let shopingcharges = 100;
+
+        input1 = prompt("enter item1");
+        input2 = prompt("enter item2");
+
+        result = Number(item1 + input1) + Number(item2 + input2) + Number(shopingcharges + input1 + input2);
+
+        document.write("price of item1 is 650", "<br>", "Quantity of item1 is " + input1 + "<br>", "price of item2 is 100 ", "<br>", "Quantity of item2 is " + input2 + "<br>", "shoping charges is 100", "<br>", "<br>", "Total cost of your order is " + result + "");
+
     </script>
     <br>
     <h2>Q8</h2>
     <h1>MARKSHEET</h1>
     <br><br><br><br>
     <script>
-        let total = "980"
-        let obtain = "804"
-        result = (obtain) / (total) * "100"
-        console.log(result)
-        document.write("Total Marks is 980", "<br>", "Marks obtain is 804", "<br>", "percentage is")
-        document.write(result)
-        document.write("%")
+
+        let maths = + prompt("Enter your maths marks");
+        let chemistry = + prompt("Enter your chemistry marks");
+        let physics = + prompt("Enter your physics marks");
+
+        let totalMarks = 300;
+        let addTotalMarks = maths + chemistry + physics;
+        let percentage = addTotalMarks / totalMarks * 100;
+
+        document.write("<h1>" + "Mark Sheet" + "</h1>")
+
+        document.write("<h3>" + "chemistry: " + chemistry + "/100" + "</h3>")
+
+        document.write("<h3>" + "physics: " + physics + "/100" + "</h3>")
+
+        document.write("<h3>" + "maths: " + maths + "/100" + "</h3>")
+
+
+        document.write("<h3>" + "percentage: " + percentage + "%" + "</h3>")
+
+        if (percentage >= 70) {
+            document.write("<h3>" + "Grade: A " + "</h3>")
+
+        }
+
+        else if (percentage >= 60) {
+            document.write("<h3>" + "Grade: B " + "</h3>")
+
+        }
+
+        else if (percentage >= 50) {
+            document.write("<h3>" + "Grade: C " + "</h3>")
+
+        } else {
+            document.write("<h3>" + "Grade: Fail " + "</h3>")
+        }
     </script>
     <br>
     <h2>Q9</h2>
@@ -111,11 +145,10 @@
     <br>
     <h2>Q11</h2>
     <script>
-        let current = "2022"
-        let birth = "2003"
-        sum = (current) - (birth)
-        document.write("current year = 2022", "<br>", "birth year = 2003", "<br>")
-        document.write(sum)
+        let current = prompt("Enter current year");
+        let birth = prompt("Enter birth-day year");
+        currentBirthday = Number(birth) - Number(current);
+        document.write("current year is" + current + "<br>", "birth year is" + birth + "<br>", "your age is " + currentBirthday + "");
 
     </script>
     <br>
@@ -135,6 +168,7 @@
         document.write("Favourite Snack: chocolate", "<br>", "Current age: 19", "<br>", "Estimated Maximum Age: 50", "<br>", "Amount of snacks per day: 2", "<br>",)
         document.write("You will need ", (result), " chocolateto last you until the ripe old age of 50")
     </script>
+    <h2>Q5</h2>
 </body>
 
 </html>
