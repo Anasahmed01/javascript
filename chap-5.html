@@ -70,12 +70,12 @@
     <script>
         let item1 = 650;
         let item2 = 100;
-        let shopingcharges = 100;
+        let shoppingcharges = 100;
 
-        input1 = prompt("enter item1");
-        input2 = prompt("enter item2");
+        input1 = prompt("Shopping Cart enter item1");
+        input2 = prompt("Shopping Cart enter item2");
 
-        result = Number(item1 + input1) + Number(item2 + input2) + Number(shopingcharges + input1 + input2);
+        result = Number(item1 * input1) + Number(item2 * input2) + Number(shoppingcharges);
 
         document.write("price of item1 is 650", "<br>", "Quantity of item1 is " + input1 + "<br>", "price of item2 is 100 ", "<br>", "Quantity of item2 is " + input2 + "<br>", "shoping charges is 100", "<br>", "<br>", "Total cost of your order is " + result + "");
 
@@ -125,15 +125,15 @@
     <br>
     <h2>Q9</h2>
     <script>
-        let dollar = "104.80"
-        let riyal = "28"
-        let quantityDollar = "10"
-        let quantityRiyal = "25"
-        sum1 = (dollar) * (quantityDollar)
-        sum2 = (riyal) * (quantityRiyal)
-        result = (sum1) + (sum2)
-        document.write("number of dollars is 10", "<br>", "number of riyals is 25", "<br>", "total amount convert in pakistani rupees is")
-        document.write(result)
+        let dollar = 104.80;
+        let riyal = 28;
+        let quantityDollar = prompt("Quantity of Dollar");
+        let quantityRiyal = prompt("Quantity of Riyal");
+        QuantitySum1 = (dollar) * (quantityDollar)
+        QuantitySum2 = (riyal) * (quantityRiyal)
+        result = Number(QuantitySum1) + Number(QuantitySum2)
+        document.write("number of dollars is " + quantityDollar + "<br>", "number of riyals is " + quantityRiyal + "<br>", "total Currency in PKR" + result + "")
+
     </script>
     <br>
     <h2>Q10</h2>
@@ -147,26 +147,24 @@
     <script>
         let current = prompt("Enter current year");
         let birth = prompt("Enter birth-day year");
-        currentBirthday = Number(birth) - Number(current);
+        currentBirthday = Number(current) - Number(birth);
         document.write("current year is" + current + "<br>", "birth year is" + birth + "<br>", "your age is " + currentBirthday + "");
 
     </script>
     <br>
     <h2>Q13</h2>
     <script>
-        let snack = "chocolate"
-        let age = "19"
-        let estimate = "50"
-        let quantity = "2"
-        sum = (50) * (365)
-        console.log(sum)
-        sum2 = (19) * (365)
-        console.log(sum2)
+        let snack = prompt("Enter your favorit snack")
+        let Current_age = prompt("Enter your current age ")
+        let quantity = prompt("Enter your quantity of snacks");
+        let estimate = 65;
+        let center_of_year = Number(estimate) - Number(Current_age);
+        sum = (estimate) * (365)
+        sum2 = (Current_age) * (365)
         resulti1 = (sum) - (sum2)
-        console.log(resulti1)
         result = (resulti1) * (quantity)
-        document.write("Favourite Snack: chocolate", "<br>", "Current age: 19", "<br>", "Estimated Maximum Age: 50", "<br>", "Amount of snacks per day: 2", "<br>",)
-        document.write("You will need ", (result), " chocolateto last you until the ripe old age of 50")
+        document.write("Favourite Snack is:" + snack + "<br>", "Current age is:" + Current_age + "<br>", "Estimated Maximum Age: 65", "<br>", "Amount of snacks per day is:" + quantity + "<br>",)
+        document.write("You will need ", (result), " chocolateto last you until the ripe old age of " + center_of_year + "")
     </script>
     <h2>Q5</h2>
 </body>
