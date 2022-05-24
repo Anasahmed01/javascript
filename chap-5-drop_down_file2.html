@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <a href="index.html" class="link">HOME</a>
+
     <h2>Q9</h2>
     <script>
         let dollar = 104.80;
@@ -32,7 +34,7 @@
     <br>
     <h2>Q11</h2>
     <script>
-        let current = prompt("Enter current year");
+        let current = prompt("Enter current year \nTo chek your birt-hday year");
         let birth = prompt("Enter birth-day year");
         currentBirthday = Number(current) - Number(birth);
         document.write("current year is" + current + "<br>", "birth year is" + birth + "<br>", "your age is " + currentBirthday + "");
@@ -52,6 +54,46 @@
         result = (resulti1) * (quantity)
         document.write("Favourite Snack is:" + snack + "<br>", "Current age is:" + Current_age + "<br>", "Estimated Maximum Age: 65", "<br>", "Amount of snacks per day is:" + quantity + "<br>",)
         document.write("You will need ", (result), " chocolateto last you until the ripe old age of " + center_of_year + "")
+    </script>
+    <br>
+    <h2>Q8</h2>
+    <script>
+
+        let maths = + prompt("Enter your maths marks");
+        let chemistry = + prompt("Enter your chemistry marks");
+        let physics = + prompt("Enter your physics marks");
+
+        let totalMarks = 300;
+        let addTotalMarks = maths + chemistry + physics;
+        let percentage = addTotalMarks / totalMarks * 100;
+
+        document.write("<h1>" + "Mark Sheet" + "</h1>")
+
+        document.write("<h3>" + "chemistry: " + chemistry + "/100" + "</h3>")
+
+        document.write("<h3>" + "physics: " + physics + "/100" + "</h3>")
+
+        document.write("<h3>" + "maths: " + maths + "/100" + "</h3>")
+
+
+        document.write("<h3>" + "percentage: " + percentage + "%" + "</h3>")
+
+        if (percentage >= 70) {
+            document.write("<h3>" + "Grade: A " + "</h3>")
+
+        }
+
+        else if (percentage >= 60) {
+            document.write("<h3>" + "Grade: B " + "</h3>")
+
+        }
+
+        else if (percentage >= 50) {
+            document.write("<h3>" + "Grade: C " + "</h3>")
+
+        } else {
+            document.write("<h3>" + "Grade: Fail " + "</h3>")
+        }
     </script>
 </body>
 
