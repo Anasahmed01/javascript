@@ -22,12 +22,10 @@ div {
 
 
 
-.links {
+.link {
     text-decoration: none;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: aqua;
+    color: rgb(0, 0, 0);
 }
 
 
