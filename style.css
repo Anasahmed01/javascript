@@ -26,6 +26,8 @@ div {
     text-decoration: none;
     text-align: center;
     color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -74,5 +76,5 @@ div {
 }
 
 .dropdownButtonSize {
-    font-size: 24px;
+    font-size: 28px;
 }
